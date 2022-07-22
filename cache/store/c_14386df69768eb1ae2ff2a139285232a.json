@@ -1,0 +1,912 @@
+{
+    "name": "Sammyjo20\\Saloon\\Clients\\BaseMockClient",
+    "line": 16,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Clients",
+    "file": ".\/src\/Clients\/BaseMockClient.php",
+    "relative_file": null,
+    "hash": "739fc3287d8c805d5fe344acbe34124b962e5e08",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "ReflectionClass": "ReflectionClass",
+        "URLHelper": "Sammyjo20\\Saloon\\Helpers\\URLHelper",
+        "MockResponse": "Sammyjo20\\Saloon\\Http\\MockResponse",
+        "PHPUnit": "PHPUnit\\Framework\\Assert",
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "SaloonResponse": "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+        "SaloonConnector": "Sammyjo20\\Saloon\\Http\\SaloonConnector",
+        "ReflectionHelper": "Sammyjo20\\Saloon\\Helpers\\ReflectionHelper",
+        "SaloonNoMockResponseFoundException": "Sammyjo20\\Saloon\\Exceptions\\SaloonNoMockResponseFoundException",
+        "SaloonInvalidMockResponseCaptureMethodException": "Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidMockResponseCaptureMethodException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "sequenceResponses": {
+            "name": "sequenceResponses",
+            "line": 23,
+            "short_desc": "Collection of all the responses that will be sequenced.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 23,
+                    "endLine": 23,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "connectorResponses": {
+            "name": "connectorResponses",
+            "line": 30,
+            "short_desc": "Collection of responses used only when a connector is called.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 30,
+                    "endLine": 30,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "requestResponses": {
+            "name": "requestResponses",
+            "line": 37,
+            "short_desc": "Collection of responses used only when a request is called.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 37,
+                    "endLine": 37,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "urlResponses": {
+            "name": "urlResponses",
+            "line": 44,
+            "short_desc": "Collection of responses that will run when the request is matched.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 44,
+                    "endLine": 44,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "recordedResponses": {
+            "name": "recordedResponses",
+            "line": 51,
+            "short_desc": "Collection of all the recorded responses.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 51,
+                    "endLine": 51,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 57,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidMockResponseCaptureMethodException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "mockData": {
+                    "name": "mockData",
+                    "line": 57,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "addResponses": {
+            "name": "addResponses",
+            "line": 69,
+            "short_desc": "Store the mock responses in the correct places.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidMockResponseCaptureMethodException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "responses": {
+                    "name": "responses",
+                    "line": 69,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "addResponse": {
+            "name": "addResponse",
+            "line": 88,
+            "short_desc": "Add a mock response to the client",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidMockResponseCaptureMethodException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "response": {
+                    "name": "response",
+                    "line": 88,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Sammyjo20\\Saloon\\Clients\\Sammyjo20\\Saloon\\Http\\MockResponse|callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "captureMethod": {
+                    "name": "captureMethod",
+                    "line": 88,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getNextFromSequence": {
+            "name": "getNextFromSequence",
+            "line": 129,
+            "short_desc": "Get the next response in the sequence",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "guessNextResponse": {
+            "name": "guessNextResponse",
+            "line": 142,
+            "short_desc": "Guess the next response based on the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\MockResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonNoMockResponseFoundException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 142,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "isEmpty": {
+            "name": "isEmpty",
+            "line": 194,
+            "short_desc": "Check if the responses are empty.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "recordResponse": {
+            "name": "recordResponse",
+            "line": 205,
+            "short_desc": "Record a response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "response": {
+                    "name": "response",
+                    "line": 205,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getRecordedResponses": {
+            "name": "getRecordedResponses",
+            "line": 215,
+            "short_desc": "Get all the recorded responses",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getLastRequest": {
+            "name": "getLastRequest",
+            "line": 225,
+            "short_desc": "Get the last request that the mock manager sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Clients\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getLastResponse": {
+            "name": "getLastResponse",
+            "line": 235,
+            "short_desc": "Get the last response that the mock manager sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Clients\\Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "assertSent": {
+            "name": "assertSent",
+            "line": 255,
+            "short_desc": "Assert that a given request was sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 255,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Sammyjo20\\Saloon\\Clients\\string|callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "assertNotSent": {
+            "name": "assertNotSent",
+            "line": 269,
+            "short_desc": "Assert that a given request was not sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 269,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Sammyjo20\\Saloon\\Clients\\string|callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "assertSentJson": {
+            "name": "assertSentJson",
+            "line": 284,
+            "short_desc": "Assert JSON data was sent",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 284,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "data": {
+                    "name": "data",
+                    "line": 284,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "assertNothingSent": {
+            "name": "assertNothingSent",
+            "line": 296,
+            "short_desc": "Assert that nothing was sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "assertSentCount": {
+            "name": "assertSentCount",
+            "line": 307,
+            "short_desc": "Assert a request count has been met.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "count": {
+                    "name": "count",
+                    "line": 307,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "checkRequestWasSent": {
+            "name": "checkRequestWasSent",
+            "line": 320,
+            "short_desc": "Check if a given request was sent",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 320,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Sammyjo20\\Saloon\\Clients\\string|callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "checkRequestWasNotSent": {
+            "name": "checkRequestWasNotSent",
+            "line": 347,
+            "short_desc": "Check if a request has not been sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 347,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Sammyjo20\\Saloon\\Clients\\string|callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "findResponseByRequest": {
+            "name": "findResponseByRequest",
+            "line": 358,
+            "short_desc": "Assert a given request was sent.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Clients\\Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 358,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "findResponseByRequestUrl": {
+            "name": "findResponseByRequestUrl",
+            "line": 386,
+            "short_desc": "Find a request that matches a given url pattern",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Clients\\Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "url": {
+                    "name": "url",
+                    "line": 386,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

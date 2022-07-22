@@ -1,0 +1,73 @@
+{
+    "name": "Sammyjo20\\Saloon\\Constants\\Saloon",
+    "line": 5,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Constants",
+    "file": ".\/src\/Constants\/Saloon.php",
+    "relative_file": null,
+    "hash": "acdb98c42b3c3c56d96d428fe77c00d01185321b",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": {
+        "GET": {
+            "name": "GET",
+            "line": 7,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        },
+        "POST": {
+            "name": "POST",
+            "line": 8,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        },
+        "PUT": {
+            "name": "PUT",
+            "line": 9,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        },
+        "PATCH": {
+            "name": "PATCH",
+            "line": 10,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        },
+        "DELETE": {
+            "name": "DELETE",
+            "line": 11,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        },
+        "OPTIONS": {
+            "name": "OPTIONS",
+            "line": 12,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        }
+    }
+}

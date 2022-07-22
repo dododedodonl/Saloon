@@ -1,0 +1,66 @@
+{
+    "name": "Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Interfaces",
+    "file": ".\/src\/Interfaces\/AuthenticatorInterface.php",
+    "relative_file": null,
+    "hash": "f4912446f6d75047ad37b298784d60d622fe013d",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": true,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "set": {
+            "name": "set",
+            "line": 15,
+            "short_desc": "Apply the authentication to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 15,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

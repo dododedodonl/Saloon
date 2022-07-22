@@ -1,0 +1,117 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\Auth\\RequiresTokenAuth",
+    "line": 8,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits\\Auth",
+    "file": ".\/src\/Traits\/Auth\/RequiresTokenAuth.php",
+    "relative_file": null,
+    "hash": "916439c241312483ebac3e2ac7a39dac97c8cfbd",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "MissingAuthenticatorException": "Sammyjo20\\Saloon\\Exceptions\\MissingAuthenticatorException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Sammyjo20\\Saloon\\Traits\\Auth\\RequiresAuth": "Sammyjo20\\Saloon\\Traits\\Auth\\RequiresAuth"
+    },
+    "properties": [],
+    "methods": {
+        "bootRequiresTokenAuth": {
+            "name": "bootRequiresTokenAuth",
+            "line": 16,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\MissingAuthenticatorException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 16,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getRequiresAuthMessage": {
+            "name": "getRequiresAuthMessage",
+            "line": 27,
+            "short_desc": "Default message.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 27,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

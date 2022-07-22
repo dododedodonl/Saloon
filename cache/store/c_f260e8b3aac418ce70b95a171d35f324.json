@@ -1,0 +1,168 @@
+{
+    "name": "Sammyjo20\\Saloon\\Http\\AnonymousRequestCollection",
+    "line": 8,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Http",
+    "file": ".\/src\/Http\/AnonymousRequestCollection.php",
+    "relative_file": null,
+    "hash": "20efc46b085f07247332fd27c63d4e103f3a8c8d",
+    "parent": "Sammyjo20\\Saloon\\Http\\RequestCollection",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "RequestHelper": "Sammyjo20\\Saloon\\Helpers\\RequestHelper",
+        "NestedRequestNotFoundException": "Sammyjo20\\Saloon\\Exceptions\\NestedRequestNotFoundException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "connector": {
+                    "name": "connector",
+                    "line": 16,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonConnector",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "collectionName": {
+                    "name": "collectionName",
+                    "line": 17,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 2,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "requests": {
+                    "name": "requests",
+                    "line": 18,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 2,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "__call": {
+            "name": "__call",
+            "line": 34,
+            "short_desc": "Call a request on a connector.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\NestedRequestNotFoundException",
+                    ""
+                ],
+                [
+                    "\\ReflectionException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidRequestException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "arguments": {
+                    "name": "arguments",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

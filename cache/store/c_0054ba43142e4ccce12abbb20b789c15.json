@@ -1,0 +1,96 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\Plugins\\HasFormParams",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits\\Plugins",
+    "file": ".\/src\/Traits\/Plugins\/HasFormParams.php",
+    "relative_file": null,
+    "hash": "b78148a2ff84cef92a04a5e8917191d3208f2493",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "bootHasFormParams": {
+            "name": "bootHasFormParams",
+            "line": 14,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 14,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "connectorHasDataTrait": {
+            "name": "connectorHasDataTrait",
+            "line": 25,
+            "short_desc": "Check if the connector has a trait",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

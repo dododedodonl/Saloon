@@ -1,0 +1,89 @@
+{
+    "name": "Sammyjo20\\Saloon\\Helpers\\ReflectionHelper",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Helpers",
+    "file": ".\/src\/Helpers\/ReflectionHelper.php",
+    "relative_file": null,
+    "hash": "8d8662c2d16a3b3edcbd9694b2568b97fca2c860",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "ReflectionClass": "ReflectionClass"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "isSubclassOf": {
+            "name": "isSubclassOf",
+            "line": 17,
+            "short_desc": "Check if a class is a subclass of another.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "class": {
+                    "name": "class",
+                    "line": 17,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "subclass": {
+                    "name": "subclass",
+                    "line": 17,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,151 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\CollectsInterceptors",
+    "line": 5,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits",
+    "file": ".\/src\/Traits\/CollectsInterceptors.php",
+    "relative_file": null,
+    "hash": "2da28d79e4aa815333cf5f9e8c29ffa0bf0325f3",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "responseInterceptors": {
+            "name": "responseInterceptors",
+            "line": 10,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 10,
+                    "endLine": 10,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "addResponseInterceptor": {
+            "name": "addResponseInterceptor",
+            "line": 16,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "function": {
+                    "name": "function",
+                    "line": 16,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "mergeResponseInterceptors": {
+            "name": "mergeResponseInterceptors",
+            "line": 25,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\CollectsInterceptors",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "interceptorsCollection": {
+                    "name": "interceptorsCollection",
+                    "line": 25,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": true,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getResponseInterceptors": {
+            "name": "getResponseInterceptors",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

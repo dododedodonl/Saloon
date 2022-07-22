@@ -1,0 +1,398 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\AuthenticatesRequests",
+    "line": 10,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits",
+    "file": ".\/src\/Traits\/AuthenticatesRequests.php",
+    "relative_file": null,
+    "hash": "f6a2f1f4132f391a2630df3fccc7725353f16c3d",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "BasicAuthenticator": "Sammyjo20\\Saloon\\Http\\Auth\\BasicAuthenticator",
+        "TokenAuthenticator": "Sammyjo20\\Saloon\\Http\\Auth\\TokenAuthenticator",
+        "DigestAuthenticator": "Sammyjo20\\Saloon\\Http\\Auth\\DigestAuthenticator",
+        "AuthenticatorInterface": "Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "authenticator": {
+            "name": "authenticator",
+            "line": 17,
+            "short_desc": "The authenticator used in requests.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 17,
+                    "endLine": 17
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 17,
+                        "endLine": 17,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 17,
+                                "endLine": 17
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Traits",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "defaultAuth": {
+            "name": "defaultAuth",
+            "line": 24,
+            "short_desc": "Default authenticator used.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getAuthenticator": {
+            "name": "getAuthenticator",
+            "line": 34,
+            "short_desc": "Retrieve the authenticator.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "withAuth": {
+            "name": "withAuth",
+            "line": 45,
+            "short_desc": "Register an authenticator",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\AuthenticatesRequests",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "authenticator": {
+                    "name": "authenticator",
+                    "line": 45,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "authenticate": {
+            "name": "authenticate",
+            "line": 58,
+            "short_desc": "Register an authenticator",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\AuthenticatesRequests",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "authenticator": {
+                    "name": "authenticator",
+                    "line": 58,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "withTokenAuth": {
+            "name": "withTokenAuth",
+            "line": 70,
+            "short_desc": "Attach an Authorization token to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\AuthenticatesRequests",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "token": {
+                    "name": "token",
+                    "line": 70,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "prefix": {
+                    "name": "prefix",
+                    "line": 70,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "'Bearer'",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "withBasicAuth": {
+            "name": "withBasicAuth",
+            "line": 82,
+            "short_desc": "Attach basic authentication to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\AuthenticatesRequests",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "username": {
+                    "name": "username",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "password": {
+                    "name": "password",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "withDigestAuth": {
+            "name": "withDigestAuth",
+            "line": 95,
+            "short_desc": "Attach basic authentication to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\AuthenticatesRequests",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "username": {
+                    "name": "username",
+                    "line": 95,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "password": {
+                    "name": "password",
+                    "line": 95,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "digest": {
+                    "name": "digest",
+                    "line": 95,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,259 @@
+{
+    "name": "Sammyjo20\\Saloon\\Managers\\LaravelManager",
+    "line": 11,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Managers",
+    "file": ".\/src\/Managers\/LaravelManager.php",
+    "relative_file": null,
+    "hash": "ad01ca51a41e4915fcdaa4826a94d7681dc3412b",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "CollectsConfig": "Sammyjo20\\Saloon\\Traits\\CollectsConfig",
+        "BaseMockClient": "Sammyjo20\\Saloon\\Clients\\BaseMockClient",
+        "CollectsHeaders": "Sammyjo20\\Saloon\\Traits\\CollectsHeaders",
+        "CollectsHandlers": "Sammyjo20\\Saloon\\Traits\\CollectsHandlers",
+        "CollectsInterceptors": "Sammyjo20\\Saloon\\Traits\\CollectsInterceptors"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Sammyjo20\\Saloon\\Traits\\CollectsHeaders": "Sammyjo20\\Saloon\\Traits\\CollectsHeaders",
+        "Sammyjo20\\Saloon\\Traits\\CollectsConfig": "Sammyjo20\\Saloon\\Traits\\CollectsConfig",
+        "Sammyjo20\\Saloon\\Traits\\CollectsHandlers": "Sammyjo20\\Saloon\\Traits\\CollectsHandlers",
+        "Sammyjo20\\Saloon\\Traits\\CollectsInterceptors": "Sammyjo20\\Saloon\\Traits\\CollectsInterceptors"
+    },
+    "properties": {
+        "isMocking": {
+            "name": "isMocking",
+            "line": 23,
+            "short_desc": "Is the Laravel app in mocking mode?",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 23,
+                    "endLine": 23
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 23,
+                        "endLine": 23,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 23,
+                                "endLine": 23
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Managers",
+                                "false"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "false"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "mockClient": {
+            "name": "mockClient",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Clients\\BaseMockClient",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 28,
+                        "endLine": 28,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Managers",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "setIsMocking": {
+            "name": "setIsMocking",
+            "line": 36,
+            "short_desc": "Set if we are mocking or not",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Managers\\LaravelManager",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "isMocking": {
+                    "name": "isMocking",
+                    "line": 36,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "isMocking": {
+            "name": "isMocking",
+            "line": 48,
+            "short_desc": "Is the Laravel app in mocking mode?",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setMockClient": {
+            "name": "setMockClient",
+            "line": 59,
+            "short_desc": "Set the mock client on the manager.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Managers\\LaravelManager",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "mockClient": {
+                    "name": "mockClient",
+                    "line": 59,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Clients\\BaseMockClient",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getMockClient": {
+            "name": "getMockClient",
+            "line": 71,
+            "short_desc": "Return the mock client.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Managers\\Sammyjo20\\Saloon\\Clients\\BaseMockClient",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

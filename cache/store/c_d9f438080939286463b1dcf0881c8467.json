@@ -1,0 +1,57 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\ManagesGuzzle",
+    "line": 12,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits",
+    "file": ".\/src\/Traits\/ManagesGuzzle.php",
+    "relative_file": null,
+    "hash": "79a8fe1538b243eda965a481e75308072daff8a8",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "HandlerStack": "GuzzleHttp\\HandlerStack",
+        "Request": "GuzzleHttp\\Psr7\\Request",
+        "GuzzleClient": "GuzzleHttp\\Client",
+        "MockMiddleware": "Sammyjo20\\Saloon\\Http\\Middleware\\MockMiddleware",
+        "SaloonInvalidHandlerException": "Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidHandlerException",
+        "SaloonDuplicateHandlerException": "Sammyjo20\\Saloon\\Exceptions\\SaloonDuplicateHandlerException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "createGuzzleRequest": {
+            "name": "createGuzzleRequest",
+            "line": 27,
+            "short_desc": "Create the Guzzle request",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Psr7\\Request",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

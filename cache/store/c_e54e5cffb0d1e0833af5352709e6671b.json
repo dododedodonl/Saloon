@@ -1,0 +1,299 @@
+{
+    "name": "Sammyjo20\\Saloon\\Http\\Auth\\AccessTokenAuthenticator",
+    "line": 9,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Http\\Auth",
+    "file": ".\/src\/Http\/Auth\/AccessTokenAuthenticator.php",
+    "relative_file": null,
+    "hash": "6ad2ddd32d1a9ef5c1becdfc04f4e857171edf6d",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "CarbonInterface": "Carbon\\CarbonInterface",
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "OAuthAuthenticatorInterface": "Sammyjo20\\Saloon\\Interfaces\\OAuthAuthenticatorInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "Sammyjo20\\Saloon\\Interfaces\\OAuthAuthenticatorInterface": "Sammyjo20\\Saloon\\Interfaces\\OAuthAuthenticatorInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 16,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "accessToken": {
+                    "name": "accessToken",
+                    "line": 17,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 1,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "refreshToken": {
+                    "name": "refreshToken",
+                    "line": 18,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 1,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "expiresAt": {
+                    "name": "expiresAt",
+                    "line": 19,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Carbon\\CarbonInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 1,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "set": {
+            "name": "set",
+            "line": 30,
+            "short_desc": "Apply the authentication to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "serialize": {
+            "name": "serialize",
+            "line": 40,
+            "short_desc": "Serialize the access token.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "unserialize": {
+            "name": "unserialize",
+            "line": 51,
+            "short_desc": "Unserialize the access token.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\Auth\\AccessTokenAuthenticator",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "string": {
+                    "name": "string",
+                    "line": 51,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "hasExpired": {
+            "name": "hasExpired",
+            "line": 61,
+            "short_desc": "Check if the access token has expired.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "hasNotExpired": {
+            "name": "hasNotExpired",
+            "line": 71,
+            "short_desc": "Check if the access token has not expired.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getAccessToken": {
+            "name": "getAccessToken",
+            "line": 79,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRefreshToken": {
+            "name": "getRefreshToken",
+            "line": 87,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getExpiresAt": {
+            "name": "getExpiresAt",
+            "line": 95,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Carbon\\CarbonInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

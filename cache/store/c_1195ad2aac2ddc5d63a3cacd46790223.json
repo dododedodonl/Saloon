@@ -1,0 +1,91 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\Plugins\\HasMultipartBody",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits\\Plugins",
+    "file": ".\/src\/Traits\/Plugins\/HasMultipartBody.php",
+    "relative_file": null,
+    "hash": "55a3bae1873ef3b8a8b4a416c217b62cb3f129d4",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "bootHasMultipartBody": {
+            "name": "bootHasMultipartBody",
+            "line": 13,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 13,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "connectorHasDataTrait": {
+            "name": "connectorHasDataTrait",
+            "line": 24,
+            "short_desc": "Check if the connector has a trait",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

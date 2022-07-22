@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Sammyjo20\Saloon\Clients\MockClient | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Sammyjo20_Saloon_Clients_MockClient" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Sammyjo20.html">Sammyjo20</a></li><li class="backslash">\</li><li><a href="../../../Sammyjo20/Saloon.html">Saloon</a></li><li class="backslash">\</li><li><a href="../../../Sammyjo20/Saloon/Clients.html">Clients</a></li><li class="backslash">\</li><li>MockClient</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>MockClient    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>MockClient</strong>        extends <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html"><abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_sequenceResponses">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$sequenceResponses</td>
+                <td class="last"><p>Collection of all the responses that will be sequenced.</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#property_sequenceResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connectorResponses">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$connectorResponses</td>
+                <td class="last"><p>Collection of responses used only when a connector is called.</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#property_connectorResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requestResponses">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$requestResponses</td>
+                <td class="last"><p>Collection of responses used only when a request is called.</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#property_requestResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_urlResponses">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$urlResponses</td>
+                <td class="last"><p>Collection of responses that will run when the request is matched.</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#property_urlResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_recordedResponses">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$recordedResponses</td>
+                <td class="last"><p>Collection of all the recorded responses.</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#property_recordedResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(array $mockData = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method___construct">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addResponses">addResponses</a>(array $responses)
+        
+                                            <p><p>Store the mock responses in the correct places.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_addResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addResponse">addResponse</a>(<abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\MockResponse|callable">MockResponse|callable</abbr> $response, string|null $captureMethod = null)
+        
+                                            <p><p>Add a mock response to the client</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_addResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNextFromSequence">getNextFromSequence</a>()
+        
+                                            <p><p>Get the next response in the sequence</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getNextFromSequence">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Http/MockResponse.html"><abbr title="Sammyjo20\Saloon\Http\MockResponse">MockResponse</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_guessNextResponse">guessNextResponse</a>(<a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a> $request)
+        
+                                            <p><p>Guess the next response based on the request.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_guessNextResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isEmpty">isEmpty</a>()
+        
+                                            <p><p>Check if the responses are empty.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_isEmpty">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_recordResponse">recordResponse</a>(<a href="../../../Sammyjo20/Saloon/Http/SaloonResponse.html"><abbr title="Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr></a> $response)
+        
+                                            <p><p>Record a response.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_recordResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRecordedResponses">getRecordedResponses</a>()
+        
+                                            <p><p>Get all the recorded responses</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getRecordedResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLastRequest">getLastRequest</a>()
+        
+                                            <p><p>Get the last request that the mock manager sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getLastRequest">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLastResponse">getLastResponse</a>()
+        
+                                            <p><p>Get the last response that the mock manager sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getLastResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertSent">assertSent</a>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $value)
+        
+                                            <p><p>Assert that a given request was sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertNotSent">assertNotSent</a>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $request)
+        
+                                            <p><p>Assert that a given request was not sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertNotSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertSentJson">assertSentJson</a>(string $request, array $data)
+        
+                                            <p><p>Assert JSON data was sent</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertSentJson">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertNothingSent">assertNothingSent</a>()
+        
+                                            <p><p>Assert that nothing was sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertNothingSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertSentCount">assertSentCount</a>(int $count)
+        
+                                            <p><p>Assert a request count has been met.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertSentCount">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkRequestWasSent">checkRequestWasSent</a>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $request)
+        
+                                            <p><p>Check if a given request was sent</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_checkRequestWasSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkRequestWasNotSent">checkRequestWasNotSent</a>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $request)
+        
+                                            <p><p>Check if a request has not been sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_checkRequestWasNotSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findResponseByRequest">findResponseByRequest</a>(string $request)
+        
+                                            <p><p>Assert a given request was sent.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_findResponseByRequest">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_findResponseByRequestUrl">findResponseByRequestUrl</a>(string $url)
+        
+                                            <p><p>Find a request that matches a given url pattern</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_findResponseByRequestUrl">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method___construct">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 57</div>
+        <code>                    
+    <strong>__construct</strong>(array $mockData = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$mockData</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidMockResponseCaptureMethodException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidMockResponseCaptureMethodException">SaloonInvalidMockResponseCaptureMethodException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addResponses">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_addResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 69</div>
+        <code>                    void
+    <strong>addResponses</strong>(array $responses)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Store the mock responses in the correct places.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$responses</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidMockResponseCaptureMethodException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidMockResponseCaptureMethodException">SaloonInvalidMockResponseCaptureMethodException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addResponse">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_addResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 88</div>
+        <code>                    void
+    <strong>addResponse</strong>(<abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\MockResponse|callable">MockResponse|callable</abbr> $response, string|null $captureMethod = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a mock response to the client</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\MockResponse|callable">MockResponse|callable</abbr></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$captureMethod</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidMockResponseCaptureMethodException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidMockResponseCaptureMethodException">SaloonInvalidMockResponseCaptureMethodException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextFromSequence">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getNextFromSequence">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 129</div>
+        <code>                    mixed
+    <strong>getNextFromSequence</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the next response in the sequence</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_guessNextResponse">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_guessNextResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 142</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Http/MockResponse.html"><abbr title="Sammyjo20\Saloon\Http\MockResponse">MockResponse</abbr></a>
+    <strong>guessNextResponse</strong>(<a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a> $request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Guess the next response based on the request.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Http/MockResponse.html"><abbr title="Sammyjo20\Saloon\Http\MockResponse">MockResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonNoMockResponseFoundException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonNoMockResponseFoundException">SaloonNoMockResponseFoundException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEmpty">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_isEmpty">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 194</div>
+        <code>                    bool
+    <strong>isEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check if the responses are empty.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recordResponse">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_recordResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 205</div>
+        <code>                    void
+    <strong>recordResponse</strong>(<a href="../../../Sammyjo20/Saloon/Http/SaloonResponse.html"><abbr title="Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr></a> $response)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Record a response.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Http/SaloonResponse.html"><abbr title="Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr></a></td>
+                <td>$response</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRecordedResponses">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getRecordedResponses">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 215</div>
+        <code>                    array
+    <strong>getRecordedResponses</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all the recorded responses</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastRequest">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getLastRequest">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 225</div>
+        <code>                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr>|null
+    <strong>getLastRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the last request that the mock manager sent.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastResponse">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_getLastResponse">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 235</div>
+        <code>                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null
+    <strong>getLastResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the last response that the mock manager sent.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertSent">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 255</div>
+        <code>                    void
+    <strong>assertSent</strong>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that a given request was sent.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertNotSent">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertNotSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 269</div>
+        <code>                    void
+    <strong>assertNotSent</strong>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that a given request was not sent.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertSentJson">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertSentJson">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 284</div>
+        <code>                    void
+    <strong>assertSentJson</strong>(string $request, array $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert JSON data was sent</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertNothingSent">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertNothingSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 296</div>
+        <code>                    void
+    <strong>assertNothingSent</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert that nothing was sent.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertSentCount">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_assertSentCount">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 307</div>
+        <code>                    void
+    <strong>assertSentCount</strong>(int $count)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert a request count has been met.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkRequestWasSent">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_checkRequestWasSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 320</div>
+        <code>            protected        bool
+    <strong>checkRequestWasSent</strong>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check if a given request was sent</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkRequestWasNotSent">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_checkRequestWasNotSent">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 347</div>
+        <code>            protected        bool
+    <strong>checkRequestWasNotSent</strong>(<abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check if a request has not been sent.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Sammyjo20\Saloon\Clients\string|callable">string|callable</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findResponseByRequest">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_findResponseByRequest">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 358</div>
+        <code>                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null
+    <strong>findResponseByRequest</strong>(string $request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Assert a given request was sent.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findResponseByRequestUrl">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html#method_findResponseByRequestUrl">
+<abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a> at line 386</div>
+        <code>                    <abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null
+    <strong>findResponseByRequestUrl</strong>(string $url)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Find a request that matches a given url pattern</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sammyjo20\Saloon\Clients\Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

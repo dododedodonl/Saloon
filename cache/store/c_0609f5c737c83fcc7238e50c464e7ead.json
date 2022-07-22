@@ -1,0 +1,219 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\SendsRequests",
+    "line": 11,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits",
+    "file": ".\/src\/Traits\/SendsRequests.php",
+    "relative_file": null,
+    "hash": "09f9a587db5fca2f2bef6e433fb634e494d12a09",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "PromiseInterface": "GuzzleHttp\\Promise\\PromiseInterface",
+        "MockClient": "Sammyjo20\\Saloon\\Clients\\MockClient",
+        "SaloonResponse": "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+        "RequestManager": "Sammyjo20\\Saloon\\Managers\\RequestManager",
+        "SaloonException": "Sammyjo20\\Saloon\\Exceptions\\SaloonException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "send": {
+            "name": "send",
+            "line": 23,
+            "short_desc": "Send the request synchronously.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonException",
+                    ""
+                ],
+                [
+                    "\\GuzzleHttp\\Exception\\GuzzleException",
+                    ""
+                ],
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "mockClient": {
+                    "name": "mockClient",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Clients\\MockClient",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "asynchronous": {
+                    "name": "asynchronous",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "false",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "sendAsync": {
+            "name": "sendAsync",
+            "line": 42,
+            "short_desc": "Send the request asynchronously",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Promise\\PromiseInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonException",
+                    ""
+                ],
+                [
+                    "\\GuzzleHttp\\Exception\\GuzzleException",
+                    ""
+                ],
+                [
+                    "\\ReflectionException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "mockClient": {
+                    "name": "mockClient",
+                    "line": 42,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Clients\\MockClient",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getRequestManager": {
+            "name": "getRequestManager",
+            "line": 55,
+            "short_desc": "Create a request manager instance from the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Managers\\RequestManager",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "mockClient": {
+                    "name": "mockClient",
+                    "line": 55,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Clients\\MockClient",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "asynchronous": {
+                    "name": "asynchronous",
+                    "line": 55,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "false",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

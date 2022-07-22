@@ -1,0 +1,106 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\Plugins\\CastsToDto",
+    "line": 8,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits\\Plugins",
+    "file": ".\/src\/Traits\/Plugins\/CastsToDto.php",
+    "relative_file": null,
+    "hash": "cd7cb4ef18abf95c6e0053ae2a0dc2b056c694f1",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "SaloonResponse": "Sammyjo20\\Saloon\\Http\\SaloonResponse"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "bootCastsToDto": {
+            "name": "bootCastsToDto",
+            "line": 17,
+            "short_desc": "Boot the castsToDto plugin. This will create a response interceptor that will populate the DTO\nproperty on the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 17,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "castToDto": {
+            "name": "castToDto",
+            "line": 34,
+            "short_desc": "Define how Saloon should cast to your DTO.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 18,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "response": {
+                    "name": "response",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,1121 @@
+{
+    "name": "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+    "line": 14,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Http",
+    "file": ".\/src\/Http\/SaloonResponse.php",
+    "relative_file": null,
+    "hash": "8e6a0410f2e91784a51e41fe9c4ae3d8da8ebfc9",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SimpleXMLElement": "SimpleXMLElement",
+        "Arr": "Illuminate\\Support\\Arr",
+        "Response": "GuzzleHttp\\Psr7\\Response",
+        "Collection": "Illuminate\\Support\\Collection",
+        "StreamInterface": "Psr\\Http\\Message\\StreamInterface",
+        "Macroable": "Illuminate\\Support\\Traits\\Macroable",
+        "RequestException": "GuzzleHttp\\Exception\\RequestException",
+        "SaloonRequestException": "Sammyjo20\\Saloon\\Exceptions\\SaloonRequestException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Support\\Traits\\Macroable": "Illuminate\\Support\\Traits\\Macroable"
+    },
+    "properties": {
+        "response": {
+            "name": "response",
+            "line": 23,
+            "short_desc": "The underlying PSR response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Psr7\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "decodedJson": {
+            "name": "decodedJson",
+            "line": 30,
+            "short_desc": "The decoded JSON response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "decodedXml": {
+            "name": "decodedXml",
+            "line": 37,
+            "short_desc": "The decoded XML response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "requestOptions": {
+            "name": "requestOptions",
+            "line": 44,
+            "short_desc": "The request options we attached to the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "originalRequest": {
+            "name": "originalRequest",
+            "line": 51,
+            "short_desc": "The original request",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "guzzleRequestException": {
+            "name": "guzzleRequestException",
+            "line": 58,
+            "short_desc": "The original Guzzle request exception",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Exception\\RequestException",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 58,
+                    "endLine": 58
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 58,
+                        "endLine": 58,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 58,
+                                "endLine": 58
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Http",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "dto": {
+            "name": "dto",
+            "line": 65,
+            "short_desc": "The data transfer object specified on the request if the CastsToDto plugin was added.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 65,
+                    "endLine": 65
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 65,
+                        "endLine": 65,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 65,
+                                "endLine": 65
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Http",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 89,
+            "short_desc": "Create a new response instance.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "requestOptions": {
+                    "name": "requestOptions",
+                    "line": 89,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "originalRequest": {
+                    "name": "originalRequest",
+                    "line": 89,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "response": {
+                    "name": "response",
+                    "line": 89,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\GuzzleHttp\\Psr7\\Response",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "guzzleRequestException": {
+                    "name": "guzzleRequestException",
+                    "line": 89,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\GuzzleHttp\\Exception\\RequestException",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getRequestOptions": {
+            "name": "getRequestOptions",
+            "line": 102,
+            "short_desc": "Get the request options we attached to the request. Headers, Config etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getOriginalRequest": {
+            "name": "getOriginalRequest",
+            "line": 112,
+            "short_desc": "Get the original request",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "body": {
+            "name": "body",
+            "line": 122,
+            "short_desc": "Get the body of the response as string.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "stream": {
+            "name": "stream",
+            "line": 132,
+            "short_desc": "Get the body as a stream. Don't forget to close the stream after using ->close().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Psr\\Http\\Message\\StreamInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "json": {
+            "name": "json",
+            "line": 144,
+            "short_desc": "Get the JSON decoded body of the response as an array or scalar value.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "key": {
+                    "name": "key",
+                    "line": 144,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "default": {
+                    "name": "default",
+                    "line": 144,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "object": {
+            "name": "object",
+            "line": 162,
+            "short_desc": "Get the JSON decoded body of the response as an object.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "xml": {
+            "name": "xml",
+            "line": 173,
+            "short_desc": "Convert the XML response into a SimpleXMLElement.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\SimpleXMLElement|bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "arguments": {
+                    "name": "arguments",
+                    "line": 173,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": true,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "collect": {
+            "name": "collect",
+            "line": 188,
+            "short_desc": "Get the JSON decoded body of the response as a collection.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Support\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "key": {
+                    "name": "key",
+                    "line": 188,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "null",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "dto": {
+            "name": "dto",
+            "line": 198,
+            "short_desc": "Cast the response to a DTO.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "header": {
+            "name": "header",
+            "line": 209,
+            "short_desc": "Get a header from the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "header": {
+                    "name": "header",
+                    "line": 209,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "headers": {
+            "name": "headers",
+            "line": 219,
+            "short_desc": "Get the headers from the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "status": {
+            "name": "status",
+            "line": 229,
+            "short_desc": "Get the status code of the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "successful": {
+            "name": "successful",
+            "line": 239,
+            "short_desc": "Determine if the request was successful.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "ok": {
+            "name": "ok",
+            "line": 249,
+            "short_desc": "Determine if the response code was \"OK\".",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "redirect": {
+            "name": "redirect",
+            "line": 259,
+            "short_desc": "Determine if the response was a redirect.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "failed": {
+            "name": "failed",
+            "line": 269,
+            "short_desc": "Determine if the response indicates a client or server error occurred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "clientError": {
+            "name": "clientError",
+            "line": 279,
+            "short_desc": "Determine if the response indicates a client error occurred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "serverError": {
+            "name": "serverError",
+            "line": 289,
+            "short_desc": "Determine if the response indicates a server error occurred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "onError": {
+            "name": "onError",
+            "line": 300,
+            "short_desc": "Execute the given callback if there was a server or client error.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "callback": {
+                    "name": "callback",
+                    "line": 300,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "close": {
+            "name": "close",
+            "line": 314,
+            "short_desc": "Close the stream and any underlying resources.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "toPsrResponse": {
+            "name": "toPsrResponse",
+            "line": 326,
+            "short_desc": "Get the underlying PSR response for the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Psr7\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "toGuzzleResponse": {
+            "name": "toGuzzleResponse",
+            "line": 336,
+            "short_desc": "Get the underlying PSR response for the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Psr7\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "toException": {
+            "name": "toException",
+            "line": 346,
+            "short_desc": "Create an exception if a server or client error occurred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonRequestException",
+                    false
+                ],
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "throw": {
+            "name": "throw",
+            "line": 361,
+            "short_desc": "Throw an exception if a server or client error occurred.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonRequestException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "__toString": {
+            "name": "__toString",
+            "line": 375,
+            "short_desc": "Get the body of the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setCached": {
+            "name": "setCached",
+            "line": 386,
+            "short_desc": "Set if the response is cached. Should only be used internally.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "cached": {
+                    "name": "cached",
+                    "line": 386,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "setMocked": {
+            "name": "setMocked",
+            "line": 399,
+            "short_desc": "Set if the response is mocked. Should only be used internally.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "mocked": {
+                    "name": "mocked",
+                    "line": 399,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "isCached": {
+            "name": "isCached",
+            "line": 411,
+            "short_desc": "Check if the response has been cached",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isMocked": {
+            "name": "isMocked",
+            "line": 421,
+            "short_desc": "Check if the response has been mocked",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getGuzzleException": {
+            "name": "getGuzzleException",
+            "line": 431,
+            "short_desc": "Get the original request exception",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\GuzzleHttp\\Exception\\RequestException",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setDto": {
+            "name": "setDto",
+            "line": 442,
+            "short_desc": "Set the DTO on the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\SaloonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "dto": {
+                    "name": "dto",
+                    "line": 442,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

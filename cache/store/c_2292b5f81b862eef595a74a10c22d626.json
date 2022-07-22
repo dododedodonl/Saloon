@@ -1,0 +1,123 @@
+{
+    "name": "Sammyjo20\\Saloon\\Http\\Middleware\\MockMiddleware",
+    "line": 10,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Http\\Middleware",
+    "file": ".\/src\/Http\/Middleware\/MockMiddleware.php",
+    "relative_file": null,
+    "hash": "bb1f9f66a64bec136197fb36240cd40fc9e5f3af",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "RequestInterface": "Psr\\Http\\Message\\RequestInterface",
+        "RejectedPromise": "GuzzleHttp\\Promise\\RejectedPromise",
+        "MockResponse": "Sammyjo20\\Saloon\\Http\\MockResponse",
+        "FulfilledPromise": "GuzzleHttp\\Promise\\FulfilledPromise"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "mockResponse": {
+            "name": "mockResponse",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\MockResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 20,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "mockResponse": {
+                    "name": "mockResponse",
+                    "line": 20,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\MockResponse",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "__invoke": {
+            "name": "__invoke",
+            "line": 31,
+            "short_desc": "Return the fake fulfilled response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Closure",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "handler": {
+                    "name": "handler",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

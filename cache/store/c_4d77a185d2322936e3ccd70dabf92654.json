@@ -1,0 +1,47 @@
+{
+    "name": "Sammyjo20\\Saloon\\Helpers\\StateHelper",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Helpers",
+    "file": ".\/src\/Helpers\/StateHelper.php",
+    "relative_file": null,
+    "hash": "c345b804820b5bd71d62d995b9465cfc5e371e3c",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Str": "Illuminate\\Support\\Str"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "createRandomState": {
+            "name": "createRandomState",
+            "line": 14,
+            "short_desc": "Generate a random string for the state.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

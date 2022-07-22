@@ -1,0 +1,675 @@
+{
+    "name": "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Helpers\\OAuth2",
+    "file": ".\/src\/Helpers\/OAuth2\/OAuthConfig.php",
+    "relative_file": null,
+    "hash": "3a0e1f858f2d8dc2cb394f49c99da4964619024c",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "OAuthConfigValidationException": "Sammyjo20\\Saloon\\Exceptions\\OAuthConfigValidationException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "clientId": {
+            "name": "clientId",
+            "line": 14,
+            "short_desc": "The Client ID",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "attributes": {
+                    "startLine": 14,
+                    "endLine": 14,
+                    "kind": 1
+                },
+                "value": ""
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "clientSecret": {
+            "name": "clientSecret",
+            "line": 21,
+            "short_desc": "The Client Secret",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "attributes": {
+                    "startLine": 21,
+                    "endLine": 21,
+                    "kind": 1
+                },
+                "value": ""
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "redirectUri": {
+            "name": "redirectUri",
+            "line": 28,
+            "short_desc": "The Redirect URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28,
+                    "kind": 1
+                },
+                "value": ""
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "authorizeEndpoint": {
+            "name": "authorizeEndpoint",
+            "line": 35,
+            "short_desc": "The endpoint used for the authorization URL.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "attributes": {
+                    "startLine": 35,
+                    "endLine": 35,
+                    "kind": 1
+                },
+                "value": "authorize"
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "tokenEndpoint": {
+            "name": "tokenEndpoint",
+            "line": 42,
+            "short_desc": "The endpoint used to create and refresh tokens.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "attributes": {
+                    "startLine": 42,
+                    "endLine": 42,
+                    "kind": 1
+                },
+                "value": "token"
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "userEndpoint": {
+            "name": "userEndpoint",
+            "line": 49,
+            "short_desc": "The endpoint used to retrieve user information.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Scalar_String",
+                "attributes": {
+                    "startLine": 49,
+                    "endLine": 49,
+                    "kind": 1
+                },
+                "value": "user"
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "defaultScopes": {
+            "name": "defaultScopes",
+            "line": 56,
+            "short_desc": "The default scopes that will be applied to every authorization URL.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 56,
+                    "endLine": 56,
+                    "kind": 2
+                },
+                "items": []
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "make": {
+            "name": "make",
+            "line": 63,
+            "short_desc": "Create a new instance of the class.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getClientId": {
+            "name": "getClientId",
+            "line": 73,
+            "short_desc": "Get the Client ID",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setClientId": {
+            "name": "setClientId",
+            "line": 84,
+            "short_desc": "Set the Client ID",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "clientId": {
+                    "name": "clientId",
+                    "line": 84,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getClientSecret": {
+            "name": "getClientSecret",
+            "line": 96,
+            "short_desc": "Get the Client Secret",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setClientSecret": {
+            "name": "setClientSecret",
+            "line": 107,
+            "short_desc": "Set the Client Secret",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "clientSecret": {
+                    "name": "clientSecret",
+                    "line": 107,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getRedirectUri": {
+            "name": "getRedirectUri",
+            "line": 119,
+            "short_desc": "Get the Redirect URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setRedirectUri": {
+            "name": "setRedirectUri",
+            "line": 130,
+            "short_desc": "Set the Redirect URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "redirectUri": {
+                    "name": "redirectUri",
+                    "line": 130,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getAuthorizeEndpoint": {
+            "name": "getAuthorizeEndpoint",
+            "line": 142,
+            "short_desc": "Get the authorization endpoint.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setAuthorizeEndpoint": {
+            "name": "setAuthorizeEndpoint",
+            "line": 153,
+            "short_desc": "Set the authorization endpoint.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "authorizeEndpoint": {
+                    "name": "authorizeEndpoint",
+                    "line": 153,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getTokenEndpoint": {
+            "name": "getTokenEndpoint",
+            "line": 165,
+            "short_desc": "Get the token endpoint.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setTokenEndpoint": {
+            "name": "setTokenEndpoint",
+            "line": 176,
+            "short_desc": "Set the token endpoint.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "tokenEndpoint": {
+                    "name": "tokenEndpoint",
+                    "line": 176,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getUserEndpoint": {
+            "name": "getUserEndpoint",
+            "line": 188,
+            "short_desc": "Get the user endpoint.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setUserEndpoint": {
+            "name": "setUserEndpoint",
+            "line": 199,
+            "short_desc": "Set the user endpoint.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "userEndpoint": {
+                    "name": "userEndpoint",
+                    "line": 199,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getDefaultScopes": {
+            "name": "getDefaultScopes",
+            "line": 211,
+            "short_desc": "Get the default scopes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setDefaultScopes": {
+            "name": "setDefaultScopes",
+            "line": 222,
+            "short_desc": "Set the default scopes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "defaultScopes": {
+                    "name": "defaultScopes",
+                    "line": 222,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "validate": {
+            "name": "validate",
+            "line": 235,
+            "short_desc": "Validate the OAuth2 config.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\OAuthConfigValidationException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

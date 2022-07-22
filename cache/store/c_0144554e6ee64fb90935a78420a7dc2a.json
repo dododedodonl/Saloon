@@ -1,0 +1,113 @@
+{
+    "name": "Sammyjo20\\Saloon\\Helpers\\RequestHelper",
+    "line": 9,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Helpers",
+    "file": ".\/src\/Helpers\/RequestHelper.php",
+    "relative_file": null,
+    "hash": "1572034c42ba1d6c05f8feb114def67f40206b09",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "SaloonConnector": "Sammyjo20\\Saloon\\Http\\SaloonConnector",
+        "SaloonInvalidRequestException": "Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidRequestException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "callFromConnector": {
+            "name": "callFromConnector",
+            "line": 21,
+            "short_desc": "Call a request from a connector.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidRequestException",
+                    ""
+                ],
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "connector": {
+                    "name": "connector",
+                    "line": 21,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonConnector",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "request": {
+                    "name": "request",
+                    "line": 21,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "arguments": {
+                    "name": "arguments",
+                    "line": 21,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

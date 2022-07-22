@@ -1,0 +1,26 @@
+{
+    "name": "Sammyjo20\\Saloon\\Exceptions\\SaloonException",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Exceptions",
+    "file": ".\/src\/Exceptions\/SaloonException.php",
+    "relative_file": null,
+    "hash": "960671bd0cd9a1a9a981bd55c07ac3e184ad0e0d",
+    "parent": "Exception",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Exception": "Exception"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

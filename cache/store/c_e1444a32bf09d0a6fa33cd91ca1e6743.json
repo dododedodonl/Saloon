@@ -1,0 +1,177 @@
+{
+    "name": "Sammyjo20\\Saloon\\Http\\OAuth2\\GetAccessTokenRequest",
+    "line": 11,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Http\\OAuth2",
+    "file": ".\/src\/Http\/OAuth2\/GetAccessTokenRequest.php",
+    "relative_file": null,
+    "hash": "1dd46f29639a89e2a01a59386b6008eed57f175d",
+    "parent": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Saloon": "Sammyjo20\\Saloon\\Constants\\Saloon",
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "OAuthConfig": "Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+        "AcceptsJson": "Sammyjo20\\Saloon\\Traits\\Plugins\\AcceptsJson",
+        "HasFormParams": "Sammyjo20\\Saloon\\Traits\\Plugins\\HasFormParams"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Sammyjo20\\Saloon\\Traits\\Plugins\\HasFormParams": "Sammyjo20\\Saloon\\Traits\\Plugins\\HasFormParams",
+        "Sammyjo20\\Saloon\\Traits\\Plugins\\AcceptsJson": "Sammyjo20\\Saloon\\Traits\\Plugins\\AcceptsJson"
+    },
+    "properties": {
+        "method": {
+            "name": "method",
+            "line": 21,
+            "short_desc": "Define the method that the request will use.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ClassConstFetch",
+                "attributes": {
+                    "startLine": 21,
+                    "endLine": 21
+                },
+                "class": {
+                    "nodeType": "Name_FullyQualified",
+                    "attributes": {
+                        "startLine": 21,
+                        "endLine": 21
+                    },
+                    "parts": [
+                        "Sammyjo20",
+                        "Saloon",
+                        "Constants",
+                        "Saloon"
+                    ]
+                },
+                "name": {
+                    "nodeType": "Identifier",
+                    "attributes": {
+                        "startLine": 21,
+                        "endLine": 21
+                    },
+                    "name": "POST"
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "defineEndpoint": {
+            "name": "defineEndpoint",
+            "line": 28,
+            "short_desc": "Define the endpoint for the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "__construct": {
+            "name": "__construct",
+            "line": 39,
+            "short_desc": "Requires the authorization code and OAuth 2 config.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "code": {
+                    "name": "code",
+                    "line": 39,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 2,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "oauthConfig": {
+                    "name": "oauthConfig",
+                    "line": 39,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Helpers\\OAuth2\\OAuthConfig",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 2,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "defaultData": {
+            "name": "defaultData",
+            "line": 49,
+            "short_desc": "Register the default data.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

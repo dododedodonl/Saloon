@@ -1,0 +1,129 @@
+{
+    "name": "Sammyjo20\\Saloon\\Interfaces\\OAuthAuthenticatorInterface",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Interfaces",
+    "file": ".\/src\/Interfaces\/OAuthAuthenticatorInterface.php",
+    "relative_file": null,
+    "hash": "06eaf0096d2c50784fcce421496ff3dd7db88cf9",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": true,
+    "is_read_only": false,
+    "aliases": {
+        "CarbonInterface": "Carbon\\CarbonInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface": "Sammyjo20\\Saloon\\Interfaces\\AuthenticatorInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "getAccessToken": {
+            "name": "getAccessToken",
+            "line": 12,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRefreshToken": {
+            "name": "getRefreshToken",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getExpiresAt": {
+            "name": "getExpiresAt",
+            "line": 22,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Carbon\\CarbonInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "hasExpired": {
+            "name": "hasExpired",
+            "line": 27,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "hasNotExpired": {
+            "name": "hasNotExpired",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

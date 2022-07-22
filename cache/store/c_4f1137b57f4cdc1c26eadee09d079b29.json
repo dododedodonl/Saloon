@@ -1,0 +1,234 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\GuessesRequests",
+    "line": 15,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits",
+    "file": ".\/src\/Traits\/GuessesRequests.php",
+    "relative_file": null,
+    "hash": "3c00c1965bf178cb744d7dd1348fa11a075976b5",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "SaloonRequest": "Sammyjo20\\Saloon\\Http\\SaloonRequest",
+        "RequestHelper": "Sammyjo20\\Saloon\\Helpers\\RequestHelper",
+        "RequestCollection": "Sammyjo20\\Saloon\\Http\\RequestCollection",
+        "ReflectionHelper": "Sammyjo20\\Saloon\\Helpers\\ReflectionHelper",
+        "ProxyRequestNameHelper": "Sammyjo20\\Saloon\\Helpers\\ProxyRequestNameHelper",
+        "AnonymousRequestCollection": "Sammyjo20\\Saloon\\Http\\AnonymousRequestCollection",
+        "ClassNotFoundException": "Sammyjo20\\Saloon\\Exceptions\\ClassNotFoundException",
+        "SaloonInvalidRequestException": "Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidRequestException",
+        "SaloonConnectorMethodNotFoundException": "Sammyjo20\\Saloon\\Exceptions\\SaloonConnectorMethodNotFoundException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "forwardCallToRequest": {
+            "name": "forwardCallToRequest",
+            "line": 33,
+            "short_desc": "Attempt to create a request and forward parameters to it.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidRequestException",
+                    ""
+                ],
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 33,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "args": {
+                    "name": "args",
+                    "line": 33,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getRegisteredRequests": {
+            "name": "getRegisteredRequests",
+            "line": 44,
+            "short_desc": "Bootstrap and get the registered requests in the $requests array.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "requestExists": {
+            "name": "requestExists",
+            "line": 66,
+            "short_desc": "Check if a given request method exists",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 66,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "guessRequest": {
+            "name": "guessRequest",
+            "line": 82,
+            "short_desc": "Attempt to guess the next request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\ClassNotFoundException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonConnectorMethodNotFoundException",
+                    ""
+                ],
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidRequestException",
+                    ""
+                ],
+                [
+                    "\\ReflectionException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "arguments": {
+                    "name": "arguments",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Sammyjo20\\Saloon\\Exceptions\\SaloonNoMockResponsesProvidedException",
+    "line": 5,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Exceptions",
+    "file": ".\/src\/Exceptions\/SaloonNoMockResponsesProvidedException.php",
+    "relative_file": null,
+    "hash": "a9793576cb21f99c3fd53730eab1f79c5b6f38e6",
+    "parent": "Sammyjo20\\Saloon\\Exceptions\\SaloonException",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 7,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

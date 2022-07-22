@@ -1,0 +1,26 @@
+{
+    "name": "Sammyjo20\\Saloon\\Exceptions\\OAuthConfigValidationException",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Exceptions",
+    "file": ".\/src\/Exceptions\/OAuthConfigValidationException.php",
+    "relative_file": null,
+    "hash": "c5330c3befe5086334e997e88af4a263bf93a0b3",
+    "parent": "Exception",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Exception": "Exception"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

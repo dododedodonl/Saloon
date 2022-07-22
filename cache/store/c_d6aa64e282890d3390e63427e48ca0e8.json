@@ -1,0 +1,569 @@
+{
+    "name": "Sammyjo20\\Saloon\\Http\\MockResponse",
+    "line": 14,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Http",
+    "file": ".\/src\/Http\/MockResponse.php",
+    "relative_file": null,
+    "hash": "a115dedc959151f6acb6f28e86ced917946db9b4",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Throwable": "Throwable",
+        "Response": "GuzzleHttp\\Psr7\\Response",
+        "RequestInterface": "Psr\\Http\\Message\\RequestInterface",
+        "CollectsData": "Sammyjo20\\Saloon\\Traits\\CollectsData",
+        "CollectsConfig": "Sammyjo20\\Saloon\\Traits\\CollectsConfig",
+        "CollectsHeaders": "Sammyjo20\\Saloon\\Traits\\CollectsHeaders",
+        "HasBody": "Sammyjo20\\Saloon\\Traits\\Plugins\\HasBody",
+        "MockExceptionClosure": "Sammyjo20\\Saloon\\Data\\MockExceptionClosure"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Sammyjo20\\Saloon\\Traits\\CollectsHeaders": "Sammyjo20\\Saloon\\Traits\\CollectsHeaders",
+        "Sammyjo20\\Saloon\\Traits\\CollectsConfig": "Sammyjo20\\Saloon\\Traits\\CollectsConfig",
+        "Sammyjo20\\Saloon\\Traits\\CollectsData": "Sammyjo20\\Saloon\\Traits\\CollectsData"
+    },
+    "properties": {
+        "status": {
+            "name": "status",
+            "line": 23,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": null,
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "rawData": {
+            "name": "rawData",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 28,
+                    "endLine": 28
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 28,
+                        "endLine": 28,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 28,
+                                "endLine": 28
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Http",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        },
+        "exceptionClosure": {
+            "name": "exceptionClosure",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Data\\MockExceptionClosure",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 33,
+                    "endLine": 33
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 33,
+                        "endLine": 33,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 33,
+                                "endLine": 33
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Http",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 43,
+            "short_desc": "Create a new mock response",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 43,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "status": {
+                    "name": "status",
+                    "line": 43,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "200",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "headers": {
+                    "name": "headers",
+                    "line": 43,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "config": {
+                    "name": "config",
+                    "line": 43,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "make": {
+            "name": "make",
+            "line": 69,
+            "short_desc": "Create a new mock response",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\MockResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 69,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "status": {
+                    "name": "status",
+                    "line": 69,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "200",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "headers": {
+                    "name": "headers",
+                    "line": 69,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "config": {
+                    "name": "config",
+                    "line": 69,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "[]",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "fromRequest": {
+            "name": "fromRequest",
+            "line": 82,
+            "short_desc": "Create a new mock response from a Saloon request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\MockResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Http\\SaloonRequest",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                },
+                "status": {
+                    "name": "status",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": "200",
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "throw": {
+            "name": "throw",
+            "line": 101,
+            "short_desc": "Throw an exception on the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Http\\MockResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 101,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\callable|Throwable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getStatus": {
+            "name": "getStatus",
+            "line": 115,
+            "short_desc": "Get the status from the responses",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getFormattedData": {
+            "name": "getFormattedData",
+            "line": 126,
+            "short_desc": "Get the formatted data on the response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "toGuzzleResponse": {
+            "name": "toGuzzleResponse",
+            "line": 147,
+            "short_desc": "Convert the mock response into a Guzzle response",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\GuzzleHttp\\Psr7\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Sammyjo20\\Saloon\\Exceptions\\SaloonInvalidConnectorException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "throwsException": {
+            "name": "throwsException",
+            "line": 157,
+            "short_desc": "Checks if the response throws an exception.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getException": {
+            "name": "getException",
+            "line": 168,
+            "short_desc": "Retrieve the exception.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Throwable",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "psrRequest": {
+                    "name": "psrRequest",
+                    "line": 168,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Psr\\Http\\Message\\RequestInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

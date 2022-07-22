@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Sammyjo20\Saloon\Managers\RequestManager | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:Sammyjo20_Saloon_Managers_RequestManager" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../Sammyjo20.html">Sammyjo20</a></li><li class="backslash">\</li><li><a href="../../../Sammyjo20/Saloon.html">Saloon</a></li><li class="backslash">\</li><li><a href="../../../Sammyjo20/Saloon/Managers.html">Managers</a></li><li class="backslash">\</li><li>RequestManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>RequestManager    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>RequestManager</strong>
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/ManagesGuzzle.html"><abbr title="Sammyjo20\Saloon\Traits\ManagesGuzzle">ManagesGuzzle</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/ManagesPlugins.html"><abbr title="Sammyjo20\Saloon\Traits\ManagesPlugins">ManagesPlugins</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_includeDefaultQuery">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$includeDefaultQuery</td>
+                <td class="last"><p>Should we include the default query when using -&gt;getQuery()?</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#property_includeDefaultQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_handlers">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$handlers</td>
+                <td class="last"><p>All the handlers loaded</p></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#property_handlers">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseInterceptors">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$responseInterceptors</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#property_responseInterceptors">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inLaravelEnvironment">
+                                                                                bool
+                                                                                
+                                    </td>
+                <td>$inLaravelEnvironment</td>
+                <td class="last"><p>Are we running Saloon in a Laravel environment?</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_laravelManger">
+                                        protected                                        <a href="../../../Sammyjo20/Saloon/Managers/LaravelManager.html"><abbr title="Sammyjo20\Saloon\Managers\LaravelManager">LaravelManager</abbr></a>|null
+                                                                                
+                                    </td>
+                <td>$laravelManger</td>
+                <td class="last"><p>The Laravel manager</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mockClient">
+                                        protected                                        <a href="../../../Sammyjo20/Saloon/Clients/BaseMockClient.html"><abbr title="Sammyjo20\Saloon\Clients\BaseMockClient">BaseMockClient</abbr></a>|null
+                                                                                
+                                    </td>
+                <td>$mockClient</td>
+                <td class="last"><p>The mock client if it has been provided</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_asynchronous">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$asynchronous</td>
+                <td class="last"><p>Determines if the request should be sent asynchronously.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="GuzzleHttp\Psr7\Request">Request</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createGuzzleRequest">createGuzzleRequest</a>()
+        
+                                            <p><p>Create the Guzzle request</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/ManagesGuzzle.html#method_createGuzzleRequest">
+<abbr title="Sammyjo20\Saloon\Traits\ManagesGuzzle">ManagesGuzzle</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_defaultHeaders">defaultHeaders</a>()
+        
+                                            <p><p>Default headers.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_defaultHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeHeaders">mergeHeaders</a>(array ...$headerCollection)
+        
+                                            <p><p>Merge headers together into one array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_mergeHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setHeaders">setHeaders</a>(array $headers)
+        
+                                            <p><p>Set the whole headers array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_setHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addHeader">addHeader</a>(string $header, $value)
+        
+                                            <p><p>Add an individual header.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_addHeader">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getHeaders">getHeaders</a>(string $key = null)
+        
+                                            <p><p>Get all headers or filter with a key.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_getHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getHeader">getHeader</a>(string $key)
+        
+                                            <p><p>Get an individual header</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_getHeader">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ignoreDefaultHeaders">ignoreDefaultHeaders</a>()
+        
+                                            <p><p>Should we ignore the default headers when calling <code>-&gt;getHeaders()</code>?</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_ignoreDefaultHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_defaultConfig">defaultConfig</a>()
+        
+                                            <p><p>Default config variables.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_defaultConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeConfig">mergeConfig</a>(array ...$configCollection)
+        
+                                            <p><p>Merge all the config into one array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_mergeConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setConfig">setConfig</a>(array $config)
+        
+                                            <p><p>Set the whole config array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_setConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addConfig">addConfig</a>(string $item, $value)
+        
+                                            <p><p>Add an individual config variable.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_addConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConfig">getConfig</a>(string $key = null)
+        
+                                            <p><p>Get all headers or filter with a key.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_getConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ignoreDefaultConfig">ignoreDefaultConfig</a>()
+        
+                                            <p><p>Should we ignore the default config when calling <code>-&gt;getConfig()</code>?</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_ignoreDefaultConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_defaultQuery">defaultQuery</a>()
+        
+                                            <p><p>Default query.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_defaultQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeQuery">mergeQuery</a>(array ...$queryCollection)
+        
+                                            <p><p>Merge query together into one array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_mergeQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setQuery">setQuery</a>(array $query)
+        
+                                            <p><p>Set the whole query array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_setQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addQuery">addQuery</a>(string $query, $value)
+        
+                                            <p><p>Add an individual query param.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_addQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getQuery">getQuery</a>(string $key = null)
+        
+                                            <p><p>Get all query or filter with a key.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_getQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ignoreDefaultQuery">ignoreDefaultQuery</a>()
+        
+                                            <p><p>Should we ignore the default query when calling <code>-&gt;getQuery()</code>?</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_ignoreDefaultQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addHandler">addHandler</a>(string $name, callable $function)
+        
+                                            <p><p>Add a handler</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#method_addHandler">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeHandlers">mergeHandlers</a>(array ...$handlersCollection)
+        
+                                            <p><p>Merge all the handlers into one array.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#method_mergeHandlers">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getHandlers">getHandlers</a>()
+        
+                                            <p><p>Return all the handlers</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#method_getHandlers">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addResponseInterceptor">addResponseInterceptor</a>(callable $function)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#method_addResponseInterceptor">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_mergeResponseInterceptors">mergeResponseInterceptors</a>(array ...$interceptorsCollection)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#method_mergeResponseInterceptors">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getResponseInterceptors">getResponseInterceptors</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#method_getResponseInterceptors">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a> $request, <a href="../../../Sammyjo20/Saloon/Clients/MockClient.html"><abbr title="Sammyjo20\Saloon\Clients\MockClient">MockClient</abbr></a> $mockClient = null, bool $asynchronous = false)
+        
+                                            <p><p>Construct the request manager</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hydrate">hydrate</a>()
+        
+                                            <p><p>Hydrate the request manager</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Http/SaloonResponse.html"><abbr title="Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr></a>|<abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_send">send</a>()
+        
+                                            <p><p>Send off the request 🚀</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isMocking">isMocking</a>()
+        
+                                            <p><p>Is the manager in mocking mode?</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRequest">getRequest</a>()
+        
+                                            <p><p>Retrieve the request from the request manager.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_createGuzzleRequest">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/ManagesGuzzle.html#method_createGuzzleRequest">
+<abbr title="Sammyjo20\Saloon\Traits\ManagesGuzzle">ManagesGuzzle</abbr></a> at line 27</div>
+        <code>                    <abbr title="GuzzleHttp\Psr7\Request">Request</abbr>
+    <strong>createGuzzleRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create the Guzzle request</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="GuzzleHttp\Psr7\Request">Request</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultHeaders">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_defaultHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 28</div>
+        <code>                    array
+    <strong>defaultHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Default headers.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeHeaders">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_mergeHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 39</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+    <strong>mergeHeaders</strong>(array ...$headerCollection)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Merge headers together into one array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$headerCollection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHeaders">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_setHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 54</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+    <strong>setHeaders</strong>(array $headers)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the whole headers array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHeader">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_addHeader">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 70</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+    <strong>addHeader</strong>(string $header, $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add an individual header.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$header</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_getHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 83</div>
+        <code>                    mixed
+    <strong>getHeaders</strong>(string $key = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all headers or filter with a key.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeader">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_getHeader">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 102</div>
+        <code>                    string
+    <strong>getHeader</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get an individual header</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoreDefaultHeaders">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html#method_ignoreDefaultHeaders">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a> at line 112</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a>
+    <strong>ignoreDefaultHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Should we ignore the default headers when calling <code>-&gt;getHeaders()</code>?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsHeaders.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHeaders">CollectsHeaders</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultConfig">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_defaultConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a> at line 28</div>
+        <code>                    array
+    <strong>defaultConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Default config variables.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeConfig">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_mergeConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a> at line 39</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+    <strong>mergeConfig</strong>(array ...$configCollection)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Merge all the config into one array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$configCollection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfig">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_setConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a> at line 55</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+    <strong>setConfig</strong>(array $config)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the whole config array.</p></p>                <p><p>If you call this, we will ignore all default config.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addConfig">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_addConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a> at line 71</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+    <strong>addConfig</strong>(string $item, $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add an individual config variable.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$item</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_getConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a> at line 84</div>
+        <code>                    mixed
+    <strong>getConfig</strong>(string $key = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all headers or filter with a key.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoreDefaultConfig">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html#method_ignoreDefaultConfig">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a> at line 102</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a>
+    <strong>ignoreDefaultConfig</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Should we ignore the default config when calling <code>-&gt;getConfig()</code>?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsConfig.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsConfig">CollectsConfig</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultQuery">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_defaultQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a> at line 29</div>
+        <code>                    array
+    <strong>defaultQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Default query.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeQuery">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_mergeQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a> at line 40</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+    <strong>mergeQuery</strong>(array ...$queryCollection)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Merge query together into one array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$queryCollection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setQuery">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_setQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a> at line 55</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+    <strong>setQuery</strong>(array $query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the whole query array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addQuery">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_addQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a> at line 71</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+    <strong>addQuery</strong>(string $query, $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add an individual query param.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQuery">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_getQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a> at line 85</div>
+        <code>                    mixed
+    <strong>getQuery</strong>(string $key = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all query or filter with a key.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ignoreDefaultQuery">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html#method_ignoreDefaultQuery">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a> at line 112</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a>
+    <strong>ignoreDefaultQuery</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Should we ignore the default query when calling <code>-&gt;getQuery()</code>?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsQueryParams.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsQueryParams">CollectsQueryParams</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addHandler">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#method_addHandler">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a> at line 21</div>
+        <code>                    void
+    <strong>addHandler</strong>(string $name, callable $function)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a handler</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$function</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeHandlers">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#method_mergeHandlers">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a> at line 32</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a>
+    <strong>mergeHandlers</strong>(array ...$handlersCollection)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Merge all the handlers into one array.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$handlersCollection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHandlers">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsHandlers.html#method_getHandlers">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsHandlers">CollectsHandlers</abbr></a> at line 46</div>
+        <code>                    array
+    <strong>getHandlers</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return all the handlers</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addResponseInterceptor">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#method_addResponseInterceptor">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a> at line 16</div>
+        <code>                    void
+    <strong>addResponseInterceptor</strong>(callable $function)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$function</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeResponseInterceptors">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#method_mergeResponseInterceptors">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a> at line 25</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a>
+    <strong>mergeResponseInterceptors</strong>(array ...$interceptorsCollection)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$interceptorsCollection</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html"><abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseInterceptors">
+        <div class="location">in <a href="../../../Sammyjo20/Saloon/Traits/CollectsInterceptors.html#method_getResponseInterceptors">
+<abbr title="Sammyjo20\Saloon\Traits\CollectsInterceptors">CollectsInterceptors</abbr></a> at line 37</div>
+        <code>                    array
+    <strong>getResponseInterceptors</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 94</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a> $request, <a href="../../../Sammyjo20/Saloon/Clients/MockClient.html"><abbr title="Sammyjo20\Saloon\Clients\MockClient">MockClient</abbr></a> $mockClient = null, bool $asynchronous = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Construct the request manager</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Clients/MockClient.html"><abbr title="Sammyjo20\Saloon\Clients\MockClient">MockClient</abbr></a></td>
+                <td>$mockClient</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$asynchronous</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonMultipleMockMethodsException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonMultipleMockMethodsException">SaloonMultipleMockMethodsException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonNoMockResponsesProvidedException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonNoMockResponsesProvidedException">SaloonNoMockResponsesProvidedException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hydrate">
+        <div class="location">at line 112</div>
+        <code>                    void
+    <strong>hydrate</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Hydrate the request manager</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at line 179</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Http/SaloonResponse.html"><abbr title="Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr></a>|<abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr>
+    <strong>send</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send off the request 🚀</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Http/SaloonResponse.html"><abbr title="Sammyjo20\Saloon\Http\SaloonResponse">SaloonResponse</abbr></a>|<abbr title="GuzzleHttp\Promise\PromiseInterface">PromiseInterface</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidResponseClassException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidResponseClassException">SaloonInvalidResponseClassException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="GuzzleHttp\Exception\GuzzleException">GuzzleException</abbr></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/ReflectionException">ReflectionException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonDuplicateHandlerException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonDuplicateHandlerException">SaloonDuplicateHandlerException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidConnectorException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidConnectorException">SaloonInvalidConnectorException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonInvalidHandlerException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonInvalidHandlerException">SaloonInvalidHandlerException</abbr></a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Sammyjo20/Saloon/Exceptions/SaloonMissingMockException.html"><abbr title="Sammyjo20\Saloon\Exceptions\SaloonMissingMockException">SaloonMissingMockException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMocking">
+        <div class="location">at line 379</div>
+        <code>                    bool
+    <strong>isMocking</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Is the manager in mocking mode?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequest">
+        <div class="location">at line 389</div>
+        <code>                    <a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a>
+    <strong>getRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieve the request from the request manager.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Sammyjo20/Saloon/Http/SaloonRequest.html"><abbr title="Sammyjo20\Saloon\Http\SaloonRequest">SaloonRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

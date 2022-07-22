@@ -1,0 +1,143 @@
+{
+    "name": "Sammyjo20\\Saloon\\Traits\\MocksRequests",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Sammyjo20\\Saloon\\Traits",
+    "file": ".\/src\/Traits\/MocksRequests.php",
+    "relative_file": null,
+    "hash": "9c419ac043aad2a5654c75487f92b343d47d1279",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": true,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "MockClient": "Sammyjo20\\Saloon\\Clients\\MockClient"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "mockClient": {
+            "name": "mockClient",
+            "line": 12,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Clients\\MockClient",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 2,
+            "default": {
+                "nodeType": "Expr_ConstFetch",
+                "attributes": {
+                    "startLine": 12,
+                    "endLine": 12
+                },
+                "name": {
+                    "nodeType": "Name",
+                    "attributes": {
+                        "startLine": 12,
+                        "endLine": 12,
+                        "namespacedName": {
+                            "nodeType": "Name_FullyQualified",
+                            "attributes": {
+                                "startLine": 12,
+                                "endLine": 12
+                            },
+                            "parts": [
+                                "Sammyjo20",
+                                "Saloon",
+                                "Traits",
+                                "null"
+                            ]
+                        }
+                    },
+                    "parts": [
+                        "null"
+                    ]
+                }
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false
+        }
+    },
+    "methods": {
+        "withMockClient": {
+            "name": "withMockClient",
+            "line": 20,
+            "short_desc": "Register a mock client for the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\MocksRequests",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "mockClient": {
+                    "name": "mockClient",
+                    "line": 20,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Sammyjo20\\Saloon\\Clients\\MockClient",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
+        "getMockClient": {
+            "name": "getMockClient",
+            "line": 32,
+            "short_desc": "Get the mock client on the request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Sammyjo20\\Saloon\\Traits\\Sammyjo20\\Saloon\\Clients\\MockClient",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
