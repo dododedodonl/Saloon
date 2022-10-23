@@ -14,7 +14,7 @@ return new Doctum($iterator, [
     'language' => 'en',
     'build_dir' => __DIR__ . '/build',
     'cache_dir' => __DIR__ . '/cache',
-    'source_dir' => './',
+    'source_dir' => __DIR__,
     'remote_repository' => new GitHubRemoteRepository('sammyjo20/saloon', __DIR__),
     'default_opened_level' => 2, // optional, 2 is the default value
 ]);
