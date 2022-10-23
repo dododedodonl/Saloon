@@ -8,7 +8,7 @@
     "namespace": "Sammyjo20\\Saloon\\Http",
     "file": ".\/src\/Http\/SaloonRequest.php",
     "relative_file": null,
-    "hash": "a70b6c35f9df38e8d8df43835d9646207a2765c4",
+    "hash": "3fe6c8053679d00329bc88eab23763f57d903eab",
     "parent": null,
     "modifiers": 16,
     "is_trait": false,
@@ -237,9 +237,48 @@
             "errors": [],
             "parameters": []
         },
+        "resolveConnector": {
+            "name": "resolveConnector",
+            "line": 119,
+            "short_desc": "Resolve the connector.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sammyjo20\\Saloon\\Http\\SaloonConnector",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "connectorClass": {
+                    "name": "connectorClass",
+                    "line": 119,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false
+                }
+            }
+        },
         "getConnector": {
             "name": "getConnector",
-            "line": 120,
+            "line": 131,
             "short_desc": "Get the connector instance. If it hasn't yet been booted, we will boot it up.",
             "long_desc": "",
             "hint": [
@@ -272,7 +311,7 @@
         },
         "setConnector": {
             "name": "setConnector",
-            "line": 135,
+            "line": 146,
             "short_desc": "Specify a connector to use in the request.",
             "long_desc": "",
             "hint": [
@@ -291,7 +330,7 @@
             "parameters": {
                 "connector": {
                     "name": "connector",
-                    "line": 135,
+                    "line": 146,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -311,7 +350,7 @@
         },
         "getFullRequestUrl": {
             "name": "getFullRequestUrl",
-            "line": 148,
+            "line": 159,
             "short_desc": "Build up the final request URL.",
             "long_desc": "",
             "hint": [
@@ -336,7 +375,7 @@
         },
         "traitExistsOnConnector": {
             "name": "traitExistsOnConnector",
-            "line": 163,
+            "line": 174,
             "short_desc": "Check if a trait exists on the connector.",
             "long_desc": "",
             "hint": [
@@ -360,7 +399,7 @@
             "parameters": {
                 "trait": {
                     "name": "trait",
-                    "line": 163,
+                    "line": 174,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -380,7 +419,7 @@
         },
         "__call": {
             "name": "__call",
-            "line": 177,
+            "line": 188,
             "short_desc": "Dynamically proxy other methods to the connector.",
             "long_desc": "",
             "hint": [
@@ -408,7 +447,7 @@
             "parameters": {
                 "method": {
                     "name": "method",
-                    "line": 177,
+                    "line": 188,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [],
@@ -421,7 +460,7 @@
                 },
                 "parameters": {
                     "name": "parameters",
-                    "line": 177,
+                    "line": 188,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [],
@@ -436,7 +475,7 @@
         },
         "make": {
             "name": "make",
-            "line": 192,
+            "line": 203,
             "short_desc": "Instantiate a new class with the arguments.",
             "long_desc": "",
             "hint": [
@@ -455,7 +494,7 @@
             "parameters": {
                 "arguments": {
                     "name": "arguments",
-                    "line": 192,
+                    "line": 203,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [

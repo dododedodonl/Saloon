@@ -155,7 +155,7 @@
         "defaultData": {
             "name": "defaultData",
             "line": 49,
-            "short_desc": "Register the default data.",
+            "short_desc": "Default data.",
             "long_desc": "",
             "hint": [
                 [
