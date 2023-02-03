@@ -33,3 +33,5 @@ test('you can configure a per page paginator and it will iterate over every requ
 
     dd(collect($superheroes)->pluck('superhero'));
 });
+
+// Todo: Teach people in the docs how to use a LazyCollection with Saloon's paginator
