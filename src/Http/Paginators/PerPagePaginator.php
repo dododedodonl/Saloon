@@ -99,7 +99,7 @@ class PerPagePaginator implements Iterator
      */
     public function key(): int
     {
-        // Not sure if PHP is going to like this
+        // Key for iterating over results needs to constantly increase so the index is always increasing
 
         return $this->currentPage;
     }
