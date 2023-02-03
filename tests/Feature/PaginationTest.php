@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\LazyCollection;
+use Saloon\Contracts\Response;
 use Saloon\Tests\Fixtures\Connectors\PerPagePaginatorConnector;
 use Saloon\Tests\Fixtures\Requests\PerPageSuperheroRequest;
 
@@ -9,7 +11,18 @@ test('you can configure a per page paginator and it will iterate over every requ
 
     $superheroes = [];
 
+    $request->middleware()->onRequest(function () {
+        ray()->count();
+    });
+
     $iterator = $connector->paginate($request);
+
+    $lazy = LazyCollection::make(fn () => yield from $iterator)
+        ->map(function (Response $response) {
+            return $response->json('data');
+        });
+
+    dd($lazy->all());
 
     // Todo: Learn how to get the actual response data, similar to yielding from a generator
     // Todo: Learn how to serialize an interator half way through
