@@ -8,6 +8,8 @@ use Iterator;
 use Saloon\Contracts\Request;
 use Saloon\Http\Connector;
 use Saloon\Http\Paginators\PerPagePaginator;
+use Saloon\Http\Paginators\ResultsPerPagePaginator;
+use Saloon\Http\Paginators\TestPaginator;
 use Saloon\Traits\Plugins\AcceptsJson;
 
 class PerPagePaginatorConnector extends Connector
@@ -40,6 +42,6 @@ class PerPagePaginatorConnector extends Connector
 
     public function paginate(Request $request): Iterator
     {
-        return new PerPagePaginator($this, $request);
+        return new TestPaginator($this, $request);
     }
 }
