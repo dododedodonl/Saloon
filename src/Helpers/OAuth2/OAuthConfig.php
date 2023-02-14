@@ -6,6 +6,7 @@ namespace Saloon\Helpers\OAuth2;
 
 use Saloon\Traits\Makeable;
 use Saloon\Contracts\Makeable as MakeableContract;
+use Saloon\Enums\OAuth2\Grant;
 use Saloon\Exceptions\OAuthConfigValidationException;
 
 /**
@@ -14,6 +15,13 @@ use Saloon\Exceptions\OAuthConfigValidationException;
 class OAuthConfig implements MakeableContract
 {
     use Makeable;
+
+    /**
+     * The Grant type used
+     *
+     * @var \Saloon\Enums\OAuth2\Grant
+     */
+    protected Grant $grant = Grant::AuthorizationCode;
 
     /**
      * The Client ID
@@ -63,6 +71,29 @@ class OAuthConfig implements MakeableContract
      * @var array<string>
      */
     protected array $defaultScopes = [];
+
+    /**
+     * Get the Grant type
+     *
+     * @return \Saloon\Enums\OAuth2\Grant
+     */
+    public function getGrant(): Grant
+    {
+        return $this->grant;
+    }
+
+    /**
+     * Set the Grant type
+     *
+     * @param \Saloon\Enums\OAuth2\Grant $grant
+     * @return $this
+     */
+    public function setGrant(Grant $grant): static
+    {
+        $this->grant = $grant;
+
+        return $this;
+    }
 
     /**
      * Get the Client ID
@@ -241,7 +272,7 @@ class OAuthConfig implements MakeableContract
             throw new OAuthConfigValidationException('The Client Secret is empty or has not been provided.');
         }
 
-        if (empty($this->getRedirectUri())) {
+        if ($this->grant != Grant::ClientCredentials && empty($this->getRedirectUri())) {
             throw new OAuthConfigValidationException('The Redirect URI is empty or has not been provided.');
         }
 
